@@ -1,0 +1,31 @@
+Borland Install
+Unzip bcc55.zip -> c:\borland
+
+left click lower left power button
+enter "environment" in the search field
+click "edit the system environment variables"
+Add c:\borland\bcc55\bin;c:\borland\bcc55\lib
+	to the Path and CLASSPATH environment variables
+
+See the c:\borland\bcc55\readme.txt
+Installing and running the Command Line Tools
+-----------------------------------------------
+
+1. Run freecommandlinetools.exe; choose the 
+   drive and folder into which you want to
+   install the free C++Builder 5 command line 
+   tool development system.
+   
+2. From the bin directory of your installation:
+   a. Add "c:\Borland\Bcc55" 
+      to the existing path
+   b. Create a bcc32.cfg file which will set 
+      the compiler options for the Include 
+      and Lib paths (-I and -L switches to 
+      compiler) by adding these lines:
+      -I"c:\Borland\Bcc55\include"
+      -L"c:\Borland\Bcc55\lib"
+   c. Create an ilink32.cfg file which will set 
+      the linker option for the Lib path by 
+      adding this line:
+      -L"c:\Borland\Bcc55\lib"

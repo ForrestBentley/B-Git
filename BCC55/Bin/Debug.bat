@@ -1,0 +1,1 @@
+call td32.exe %1
